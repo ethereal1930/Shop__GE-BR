@@ -1,0 +1,14 @@
+.header__nav {
+    .header__nav-title {
+        font-family: $font-lato;
+        @include font();
+        font-weight: bold;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    .header__nav-list {
+        text-decoration: none;
+    }
+}

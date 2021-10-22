@@ -1,0 +1,13 @@
+.reg {
+    background-color: $hat-pink;
+    padding: 60px 0;
+    display: flex;
+    margin-bottom: 64px;
+
+    .reg__title {
+        font-family: $font-lato;
+        @include font(24px, 29px);
+        color: $pink;
+        text-transform: uppercase;
+    }
+}

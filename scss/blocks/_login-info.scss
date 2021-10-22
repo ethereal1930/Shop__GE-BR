@@ -1,0 +1,109 @@
+.login-info {
+    display: flex;
+
+    .login-info__title {
+        font-family: $font-lato;
+        @include font(16px, 19px, 300);
+        color: $black;
+    }
+
+    .login-info__info {
+        width: 360px;
+        height: 45px;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .login-info__text {
+        font-family: $font-lato;
+        @include font(13px, 16px, 300);
+        color: $grey;
+        width: 360px;
+        margin: 15px 0 35px 0;
+    }
+
+    .button--pink {
+        padding: 18px 35px;
+        background-color: $pink;
+        color: $white;
+        font-family: $font-lato;
+        @include font(16px, 19px, 400);
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+        align-items: center;
+        margin-bottom: 96px;
+    }
+
+    .button--pink:hover {
+        background-color: $dark-pink;
+    }
+
+    .button--pink:active {
+        background-color: $sweet-pink;
+    }
+
+    .login-info__arrow {
+        padding-left: 20px;
+    }
+
+    .login-info__input {
+        margin-top: 33px;
+        margin-bottom: 33px;
+    }
+
+    .login-info__radio {
+        display: none;
+    }
+
+    .login-info__label {
+        position: relative;
+        padding-right: 37px;
+        padding-left: 15px;
+        margin: 0 0 0 20px;
+        font-family: $font-lato;
+        @include font(11px, 13px, 300);
+        color: $black;
+    }
+
+    .login-info__label::after {
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 17px;
+        border: 1px solid #A4A4A4;
+        border-radius: 50%;
+        left: -20px;
+    }
+
+    .login-info__radio:checked+.login-info__label::after {
+        background: $pink;
+        background-size: 16px 16px;
+    }
+
+    .login-info__loyalty {
+        margin-left: 124px;
+    }
+
+    .login-info__loyalty-title {
+        font-family: $font-lato;
+        @include font(29px, 24px, 300);
+        color: $black;
+        text-transform: uppercase;
+    }
+
+    .login-info__loyalty-subtitle {
+        font-family: $font-lato;
+        @include font(24px, 29px, 300);
+        color: $black;
+        text-transform: uppercase;
+        padding: 22px 0;
+    }
+
+    .login-info__loyalty-item {
+        font-family: $font-lato;
+        @include font(24px, 29px, 300);
+        color: $black;
+        padding-bottom: 17px;
+    }
+}
