@@ -199,6 +199,22 @@ table {
   background-color: transparent;
 }
 
+.header__nav .header__nav-title {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.header__nav .header__nav-list {
+  text-decoration: none;
+}
+
 .brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +642,7 @@ table {
 }
 
 .footer__up .subscr__button {
+  cursor: pointer;
   background-color: #F16D7F;
   width: 100px;
   height: 49px;
@@ -634,6 +651,14 @@ table {
   border-bottom-right-radius: 30px;
   position: absolute;
   left: 65.5%;
+}
+
+.footer__up .subscr__button:hover {
+  background-color: #c95e70;
+}
+
+.footer__up .subscr__button:active {
+  background-color: #f0a7b3;
 }
 
 .footer__up .subscr__descr {

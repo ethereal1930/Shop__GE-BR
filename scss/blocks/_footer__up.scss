@@ -60,6 +60,7 @@
     }
 
     .subscr__button {
+        cursor: pointer;
         background-color: $pink;
         width: 100px;
         height: 49px;
@@ -68,6 +69,14 @@
         border-bottom-right-radius: 30px;
         position: absolute;
         left: 65.5%;
+    }
+
+    .subscr__button:hover {
+        background-color: $dark-pink;
+    }
+
+    .subscr__button:active {
+        background-color: $sweet-pink;
     }
 
     .subscr__descr {
