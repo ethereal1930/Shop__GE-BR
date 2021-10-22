@@ -1,0 +1,461 @@
+:root {
+    --black: #222222;
+    --light-pink: #F1E4E6;
+    --pink: #F16D7F;
+    --dark-pink: rgb(201, 94, 112);
+    --sweet-pink: rgb(240, 167, 179);
+    --white: #FFFFFF;
+    --grey: #9F9F9F;
+    --grey-ligth: #F8F8F8;
+}
+
+.page {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__link {
+    margin: 0 0 0 31px;
+}
+
+.header__btn {
+    border: none;
+    background-color: transparent;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand__img {
+    height: 745px;
+}
+
+.brand__wrp {
+    background-color: var(--light-pink);
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__title {
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.brand__title::before {
+    height: 92px;
+    width: 12px;
+    background-color: var(--pink);
+    content: '';
+    position: absolute;
+    left: -20px;
+}
+
+.brand__subtitle {
+    display: flex;
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+}
+
+.brand__subtitle-pink {
+    color: var(--pink);
+    padding-left: 5px;
+}
+
+.sales {
+    margin-top: 63px;
+}
+
+.sales__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2, 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.sales__item {
+    text-align: center;
+    height: 240px;
+    width: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales__item-woman {
+    background: url(../image/women.jpg);
+}
+
+.sales__item-men {
+    background: url(../image/men.jpg);
+}
+
+.sales__item-kids {
+    background: url(../image/kids.jpg);
+}
+
+.sales__item-acces {
+    background: url(../image/accesories.jpg);
+    height: 180px;
+    width: 1140px;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.sales__text {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.sales__item-title {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--pink);
+}
+
+.fetured {
+    margin-top: 97px;
+}
+
+
+
+.button__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 11px 15px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.descr__wapper {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--white);
+    padding-left: 12px;
+}
+
+.overlay {
+    width: 100%;
+    min-height: 420px;
+    background-color: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+}
+
+
+.overlay,
+.button__wrapper {
+    display: none;
+}
+
+.fetured__item:hover .overlay,
+.fetured__item:hover .button__wrapper,
+.fetured__item:hover .descr__wapper {
+    display: flex;
+}
+
+.fetured__title {
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--black);
+    text-align: center;
+}
+
+.fetured__text {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--grey);
+    text-align: center;
+    margin: 6px 0 48px 0;
+}
+
+.fetured__list {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fetured__item {
+    background-color: var(--grey-ligth);
+    margin: 0 30px 30px 0;
+    position: relative;
+}
+
+.fetured__item-title {
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 36px 0 13px 18px;
+}
+
+.fetured__item-descr {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    padding-left: 16px;
+}
+
+.fetured__item-text {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    padding: 18px 0 20px 18px;
+}
+
+.fetured__button {
+    text-align: center;
+}
+
+.button--pink {
+    padding: 18px 35px;
+    background-color: var(--pink);
+    color: var(--white);
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    cursor: pointer;
+    border: none;
+}
+
+.button--pink:hover {
+    background-color: var(--dark-pink);
+}
+
+.button--pink:active {
+    background-color: var(--sweet-pink);
+}
+
+.delivery {
+    background-color: var(--black);
+    margin-bottom: -100px;
+}
+
+.delivery__list {
+    display: flex;
+    margin: 95px 0;
+    justify-content: center;
+}
+
+.delivery__item {
+    text-align: center;
+    max-width: 360px;
+}
+
+.delivery__item-img {
+    padding-top: 103px;
+}
+
+.delivery__item-title {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--grey-ligth);
+    padding: 19px 0 16px 0;
+}
+
+.delivery__item-descr {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: var(--grey-ligth);
+    margin-bottom: 104px;
+}
+
+.footer__up {
+    background: url(../image/surfing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 87px;
+    padding-bottom: 128px;
+
+}
+
+.footer__up-form {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.review {
+    width: 360px;
+    text-align: center;
+}
+
+.review__descr {
+    font-family: 'Lato';
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black);
+    padding-top: 35px;
+}
+
+.subscr {
+    width: 557px;
+    text-align: center;
+    position: relative;
+}
+
+.subscr__title {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.subscr__text {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.subscr__mail {
+    border: none;
+    width: 352px;
+    height: 47px;
+    border-radius: 30px;
+
+}
+
+input::placeholder {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+
+}
+
+.subscr__button {
+    background-color: var(--pink);
+    width: 100px;
+    height: 49px;
+    border: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    left: 70%;
+}
+
+.subscr__descr {
+    color: var(--white);
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__down {
+    background-color: var(--black);
+
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 79px;
+}
+
+.reserved__text {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--white);
+}
+
+.social__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

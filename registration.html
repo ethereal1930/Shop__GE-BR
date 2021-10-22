@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="container header__wrp">
+            <div class="header__wrp-controls">
+                <img class="header__logo" src="image/logo.svg" alt="logo">
+                <img class="header__search" src="image/search.svg" alt="search">
+            </div>
+            <div class="header__wrp-controls">
+                <button class="header__btn" type="button"><img src="image/burger.svg" alt="burger-menu"></button>
+                <a class="header__link" href="#"><img src="image/people.svg" alt="person"></a>
+                <a class="header__link" href="#"><img src="image/basket.svg" alt="basket"></a>
+            </div>
+            <nav class="header__nav">
+                <h2 class="header__nav-title">menu</h2>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item menu">
+                        <h3 class="menu__title">man</h3>
+                        <ul class="menu__list">
+                            <li class="menu__item">Accessories</li>
+                            <li class="menu__item">Bags</li>
+                            <li class="menu__item">Denim</li>
+                            <li class="menu__item">T-Shirts</li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item menu">
+                        <h3 class="menu__title">man</h3>
+                        <ul class="menu__list">
+                            <li class="menu__item">Accessories</li>
+                            <li class="menu__item">Jackets & Coats</li>
+                            <li class="menu__item">Polos</li>
+                            <li class="menu__item">T-Shirts</li>
+                            <li class="menu__item">Shirts</li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item menu">
+                        <h3 class="menu__title">kids</h3>
+                        <ul class="menu__list">
+                            <li class="menu__item">Accessories</li>
+                            <li class="menu__item">Jackets & Coats</li>
+                            <li class="menu__item">Polos</li>
+                            <li class="menu__item">T-Shirts</li>
+                            <li class="menu__item">Shirts</li>
+                            <li class="menu__item">Bags</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="reg">
+        <div class="container">
+            <h1 class="reg__title">Registration</h1>
+        </div>
+    </section>
+    <section class="login-info">
+        <div class="container fix">
+            <section class="login-info__enter">
+                <h2 class="login-info__title">Your Name</h2>
+                <form action="">
+                    <label class="visually-hidden" for="name">name</label>
+                    <input class="login-info__info" type="text" placeholder="First Name">
+                </form>
+                <form action="">
+                    <label class="visually-hidden" for="name">name</label>
+                    <input class="login-info__info" type="text" placeholder="Last Name">
+                </form>
+
+                <div class="login-info__input">
+                    <input class="login-info__radio" type="radio">
+                    <label class="login-info__label" for="male">Male</label>
+                    <input class="login-info__radio" type="radio">
+                    <label class="login-info__label" for="female">Female</label>
+                </div>
+
+                <h2 class="login-info__title">Login details</h2>
+                <form action="">
+                    <label class="visually-hidden" for="mail">mail</label>
+                    <input class="login-info__info" type="mail" placeholder="Email" required>
+                </form>
+                <form action="">
+                    <label class="visually-hidden" for="password">password</label>
+                    <input class="login-info__info" type="password" placeholder="Password">
+                </form>
+                <p class="login-info__text">Please use 8 or more characters, with at least 1 number and a mixture of
+                    uppercase and lowercase letters</p>
+                <button class="login-info button--pink" type="button">join now
+                    <img class="login-info__arrow" src="image/arrow.svg" alt="arrow">
+                </button>
+            </section>
+            <section class="login-info__loyalty">
+                <h2 class="login-info__loyalty-title">loyalty has its perks</h2>
+                <h3 class="login-info__loyalty-subtitle">Get in on the loyalty program where you can earn points and
+                    unlock serious perks. Starting with these as soon as you join:</h3>
+                <ul class="login-info__loyalty-list">
+                    <li class="login-info__loyalty-item"><img src="image/check.svg" alt="chek mail"> 15% off welcome
+                        offer</li>
+                    <li class="login-info__loyalty-item"><img src="image/check.svg" alt="chek mail"> Free shipping,
+                        returns and exchanges on all orders</li>
+                    <li class="login-info__loyalty-item"><img src="image/check.svg" alt="chek mail"> $10 off a purchase
+                        on your birthday</li>
+                    <li class="login-info__loyalty-item"><img src="image/check.svg" alt="chek mail"> Early access to
+                        products</li>
+                    <li class="login-info__loyalty-item"><img src="image/check.svg" alt="chek mail"> Exclusive offers &
+                        rewards</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="footer__up">
+            <div class="container footer__up-form">
+                <div class="review">
+                    <img class="review__img" src="image/intersect.png" alt="person">
+                    <p class="review__descr">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus condimentum“</p>
+                </div>
+                <div class="subscr">
+                    <h2 class="subscr__title">subscribe</h2>
+                    <p class="subscr__text">for our newletter and promotion</p>
+
+                    <form action="">
+                        <label class="visually-hidden" for="email">Mail</label>
+                        <input class="subscr__mail" type="email" placeholder="Enter Your Email" required>
+                        <button class="subscr__button" type="submit">
+                            <p class="subscr__descr">Subscribe</p>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <section class="footer__down">
+            <div class="control container">
+                <div class="reserved">
+                    <p class="reserved__text">© 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="#"><img src="image/facebook.svg" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a class="delivery__item-descr" href="#"><img src="image/instagram.svg" alt="instagram"></a>
+                        </li>
+                        <li>
+                            <a class="delivery__item-descr" href="#"><img src="image/pinterest.svg" alt="pinterest"></a>
+                        </li>
+                        <li>
+                            <a class="delivery__item-descr" href="#"><img src="image/twitter.svg" alt="twitter"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

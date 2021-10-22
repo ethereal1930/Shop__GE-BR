@@ -1,0 +1,113 @@
+.fetured {
+    margin-top: 97px;
+
+    .button__wrapper {
+        @include flex-center();
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        padding: 11px 15px;
+        border: 1px solid $white;
+        cursor: pointer;
+    }
+
+    .descr__wapper {
+        font-family: $font-lato;
+        @include font();
+        color: $white;
+        padding-left: 12px;
+    }
+
+    .overlay {
+        width: 100%;
+        min-height: 420px;
+        background-color: rgba(58, 56, 56, 0.86);
+        position: absolute;
+        top: 0;
+    }
+
+
+    .overlay,
+    .button__wrapper {
+        display: none;
+    }
+
+    .fetured__item:hover .overlay,
+    .fetured__item:hover .button__wrapper,
+    .fetured__item:hover .descr__wapper {
+        display: flex;
+    }
+
+    .fetured__title {
+        font-family: $font-lato;
+        @include font (31px, 36px);
+        color: $black;
+        text-align: center;
+    }
+
+    .fetured__text {
+        font-family: $font-lato;
+        @include font();
+        color: $grey;
+        text-align: center;
+        margin: 6px 0 48px 0;
+    }
+
+    .fetured__list {
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .fetured__item {
+        background-color: $grey-ligth;
+        margin: 0 30px 30px 0;
+        position: relative;
+    }
+
+    .fetured__item-title {
+        font-family: $font-lato;
+        @include font();
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 36px 0 13px 18px;
+    }
+
+    .fetured__item-descr {
+        font-family: $font-lato;
+        @include font(14px, 17px, 300);
+        padding-left: 16px;
+        color: $grey;
+    }
+
+    .fetured__item-text {
+        font-family: $font-lato;
+        @include font(16px, 19px, 400);
+        color: $pink;
+        padding: 18px 0 20px 18px;
+    }
+
+    .fetured__button {
+        text-align: center;
+    }
+
+    .button--pink {
+        padding: 18px 35px;
+        background-color: $pink;
+        color: $white;
+        font-family: $font-lato;
+        @include font(16px, 19px, 400);
+        cursor: pointer;
+        border: none;
+    }
+
+    .button--pink:hover {
+        background-color: $dark-pink;
+    }
+
+    .button--pink:active {
+        background-color: $sweet-pink;
+    }
+}

@@ -1,0 +1,33 @@
+.delivery {
+    background-color: $black;
+    margin-bottom: -100px;
+
+    .delivery__list {
+        display: flex;
+        margin: 95px 0;
+        justify-content: center;
+    }
+
+    .delivery__item {
+        text-align: center;
+        max-width: 360px;
+    }
+
+    .delivery__item-img {
+        padding-top: 103px;
+    }
+
+    .delivery__item-title {
+        font-family: $font-lato;
+        @include font(20px, 24px);
+        color: $grey-ligth;
+        padding: 19px 0 16px 0;
+    }
+
+    .delivery__item-descr {
+        font-family: $font-lato;
+        @include font(14px, 17px, 300);
+        color: $grey-ligth;
+        margin-bottom: 104px;
+    }
+}
