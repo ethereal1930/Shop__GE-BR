@@ -1,6 +1,13 @@
 .login-info {
     display: flex;
 
+    .fix {
+        @include mobil {
+            @include flex-center();
+            flex-wrap: wrap;
+        }
+    }
+
     .login-info__title {
         font-family: $font-lato;
         @include font(16px, 19px, 300);
@@ -33,6 +40,10 @@
         text-transform: uppercase;
         align-items: center;
         margin-bottom: 96px;
+
+        @include mobil {
+            margin-bottom: 40px;
+        }
     }
 
     .button--pink:hover {
@@ -83,13 +94,27 @@
 
     .login-info__loyalty {
         margin-left: 124px;
+
+
+        @include tablet {
+            margin-left: 23px;
+            width: 386px;
+        }
+
+        @include mobil {
+            margin-left: 0;
+        }
     }
 
     .login-info__loyalty-title {
         font-family: $font-lato;
-        @include font(29px, 24px, 300);
+        @include font(24px, 29px, 300);
         color: $black;
         text-transform: uppercase;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
     }
 
     .login-info__loyalty-subtitle {
@@ -98,6 +123,10 @@
         color: $black;
         text-transform: uppercase;
         padding: 22px 0;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
     }
 
     .login-info__loyalty-item {
@@ -105,5 +134,9 @@
         @include font(24px, 29px, 300);
         color: $black;
         padding-bottom: 17px;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
     }
 }

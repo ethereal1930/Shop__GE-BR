@@ -59,12 +59,20 @@
         display: flex;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
     }
 
     .fetured__item {
         background-color: $grey-ligth;
         margin: 0 30px 30px 0;
         position: relative;
+        width: 360px;
     }
 
     .fetured__item-title {
@@ -80,6 +88,7 @@
         @include font(14px, 17px, 300);
         padding-left: 16px;
         color: $grey;
+
     }
 
     .fetured__item-text {
@@ -101,10 +110,20 @@
         @include font(16px, 19px, 400);
         cursor: pointer;
         border: none;
+
+        @include tablet {
+            background-color: inherit;
+            border: 1px solid $pink;
+            color: $pink;
+        }
     }
 
     .button--pink:hover {
         background-color: $dark-pink;
+
+        @include tablet {
+            color: $white;
+        }
     }
 
     .button--pink:active {
