@@ -2,22 +2,43 @@
     margin-top: 63px;
 
     .sales__list {
-        display: grid;
+        /*display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 2, 1fr;
         grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        grid-row-gap: 30px;*/
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
+        @include mobil {
+            display: block;
+        }
     }
 
     .sales__item {
-        text-align: center;
+        /*text-align: center;
         height: 240px;
-        width: 360px;
+        width: 360px;*/
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @include flex-center();
+        width: 30%;
+        min-height: 260px;
+        margin-bottom: 40px;
+
+
+        @include tablet {
+            min-height: 168px;
+            margin-bottom: 25px;
+        }
+
+        @include mobil {
+            width: 92%;
+            height: 247px;
+            margin-bottom: 32px;
+        }
     }
 
     .sales__item-woman {
@@ -34,10 +55,19 @@
 
     .sales__item-acces {
         background: url(../image/accesories.jpg);
-        height: 180px;
-        width: 1140px;
-        grid-column: span 3;
-        grid-row: span 2;
+        min-height: 180px;
+        width: 100%;
+
+        /*grid-column: span 3;
+        grid-row: span 2;*/
+        @include tablet {
+            min-height: 116px;
+        }
+
+        @include mobil {
+            width: 93%;
+            height: 111px;
+        }
     }
 
     .sales__text {

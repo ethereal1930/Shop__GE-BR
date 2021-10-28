@@ -25,3 +25,11 @@
         background-color: transparent;
     }
 }
+
+@media (max-width: $mobil-width) {
+    .header {
+        .header__link {
+            display: none;
+        }
+    }
+}

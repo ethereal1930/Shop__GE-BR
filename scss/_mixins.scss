@@ -10,3 +10,15 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin mobil {
+    @media (max-width: $mobil-width) {
+        @content;
+    }
+}
